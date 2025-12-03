@@ -1,0 +1,93 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Wed Dec 03 2025
+[*]
+[dumpfile] "tb_aes256_core_comprehensive.vcd"
+[savefile] "aes256_core.gtkw"
+[timestart] 0
+[size] 1920 1080
+[pos] -1 -1
+*-18.0 0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb_aes256_core_comprehensive.
+[treeopen] tb_aes256_core_comprehensive.dut.
+[sst_width] 300
+[signals_width] 300
+[sst_expanded] 1
+[sst_vpaned_height] 500
+
+@28
+tb_aes256_core_comprehensive.clk
+tb_aes256_core_comprehensive.rst_n
+@200
+-
+-Control Signals
+@28
+tb_aes256_core_comprehensive.start_i
+tb_aes256_core_comprehensive.mode_i
+@200
+-
+@28
+tb_aes256_core_comprehensive.valid_o
+tb_aes256_core_comprehensive.busy_o
+@200
+-
+-Test Control
+@22
+tb_aes256_core_comprehensive.test_num[31:0]
+@28
+tb_aes256_core_comprehensive.test_passed
+@22
+tb_aes256_core_comprehensive.pass_count[31:0]
+tb_aes256_core_comprehensive.fail_count[31:0]
+@200
+-
+-Input Data
+@22
+tb_aes256_core_comprehensive.plaintext_i[127:0]
+tb_aes256_core_comprehensive.key_i[255:0]
+@200
+-
+-Output Data
+@22
+tb_aes256_core_comprehensive.ciphertext_o[127:0]
+@200
+-
+-DUT Internal - Round Controller
+@22
+tb_aes256_core_comprehensive.dut.round_num[3:0]
+@28
+tb_aes256_core_comprehensive.dut.load_input
+tb_aes256_core_comprehensive.dut.apply_subbytes
+tb_aes256_core_comprehensive.dut.apply_shiftrows
+tb_aes256_core_comprehensive.dut.apply_mixcolumns
+tb_aes256_core_comprehensive.dut.apply_addroundkey
+@200
+-
+-DUT Internal - State Register
+@22
+tb_aes256_core_comprehensive.dut.state_reg[127:0]
+@200
+-
+-DUT Internal - Transformation Outputs
+@22
+tb_aes256_core_comprehensive.dut.subbytes_out[127:0]
+tb_aes256_core_comprehensive.dut.shiftrows_out[127:0]
+tb_aes256_core_comprehensive.dut.mixcolumns_out[127:0]
+tb_aes256_core_comprehensive.dut.addroundkey_out[127:0]
+@200
+-
+-DUT Internal - Round Keys
+@22
+tb_aes256_core_comprehensive.dut.current_round_key[127:0]
+tb_aes256_core_comprehensive.dut.current_round_key_raw[127:0]
+@200
+-
+-FSM State (Round Controller)
+@22
+tb_aes256_core_comprehensive.dut.round_ctrl_inst.state[2:0]
+@28
+tb_aes256_core_comprehensive.dut.round_ctrl_inst.done
+@200
+-
+[pattern_trace] 1
+[pattern_trace] 0

@@ -1,0 +1,181 @@
+VCD info: dumpfile tb_aes256_core_comprehensive.vcd opened for output.
+
+
+==============================================================================
+  AES-256 CORE COMPREHENSIVE TESTBENCH
+  Testing Encryption and Decryption with Multiple Test Vectors
+==============================================================================
+
+========================================
+TEST CASE 0
+========================================
+Key:       603deb1015ca71be2b73aef0857d77811f352c073b6108d72d9810a30914dff4
+Plaintext: 6bc1bee22e409f96e93d7e117393172a
+
+--- Encryption Test ---
+Encrypted: f3eed1bdb5d2a03c064b5a7e3db181f8
+✓ PASS: Encryption matches expected ciphertext
+
+--- Decryption Test ---
+Decrypted: 6bc1bee22e409f96e93d7e117393172a
+✓ PASS: Roundtrip successful (decrypt(encrypt(plaintext)) == plaintext)
+
+>>> TEST 0 PASSED <<<
+
+========================================
+TEST CASE 1
+========================================
+Key:       0000000000000000000000000000000000000000000000000000000000000000
+Plaintext: 00000000000000000000000000000000
+
+--- Encryption Test ---
+Encrypted: dc95c078a2408989ad48a21492842087
+✓ PASS: Encryption matches expected ciphertext
+
+--- Decryption Test ---
+Decrypted: 00000000000000000000000000000000
+✓ PASS: Roundtrip successful (decrypt(encrypt(plaintext)) == plaintext)
+
+>>> TEST 1 PASSED <<<
+
+========================================
+TEST CASE 2
+========================================
+Key:       ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+Plaintext: ffffffffffffffffffffffffffffffff
+
+--- Encryption Test ---
+Encrypted: d5f93d6d3311cb309f23621b02fbd5e2
+✓ PASS: Encryption matches expected ciphertext
+
+--- Decryption Test ---
+Decrypted: ffffffffffffffffffffffffffffffff
+✓ PASS: Roundtrip successful (decrypt(encrypt(plaintext)) == plaintext)
+
+>>> TEST 2 PASSED <<<
+
+========================================
+TEST CASE 3
+========================================
+Key:       aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Plaintext: 55555555555555555555555555555555
+
+--- Encryption Test ---
+Encrypted: f0783f71e5d513125328336651ce53c8
+INFO: No expected ciphertext provided (computed mode)
+
+--- Decryption Test ---
+Decrypted: 55555555555555555555555555555555
+✓ PASS: Roundtrip successful (decrypt(encrypt(plaintext)) == plaintext)
+
+>>> TEST 3 PASSED <<<
+
+========================================
+TEST CASE 4
+========================================
+Key:       000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f
+Plaintext: 00112233445566778899aabbccddeeff
+
+--- Encryption Test ---
+Encrypted: 8ea2b7ca516745bfeafc49904b496089
+✓ PASS: Encryption matches expected ciphertext
+
+--- Decryption Test ---
+Decrypted: 00112233445566778899aabbccddeeff
+✓ PASS: Roundtrip successful (decrypt(encrypt(plaintext)) == plaintext)
+
+>>> TEST 4 PASSED <<<
+
+========================================
+TEST CASE 5
+========================================
+Key:       8080808080808080808080808080808080808080808080808080808080808080
+Plaintext: 01010101010101010101010101010101
+
+--- Encryption Test ---
+Encrypted: 03a91298b61de96498c0f3e506413820
+INFO: No expected ciphertext provided (computed mode)
+
+--- Decryption Test ---
+Decrypted: 01010101010101010101010101010101
+✓ PASS: Roundtrip successful (decrypt(encrypt(plaintext)) == plaintext)
+
+>>> TEST 5 PASSED <<<
+
+========================================
+TEST CASE 6
+========================================
+Key:       0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef
+Plaintext: fedcba9876543210fedcba9876543210
+
+--- Encryption Test ---
+Encrypted: bd60ee771c506d508d76d26f5add7039
+INFO: No expected ciphertext provided (computed mode)
+
+--- Decryption Test ---
+Decrypted: fedcba9876543210fedcba9876543210
+✓ PASS: Roundtrip successful (decrypt(encrypt(plaintext)) == plaintext)
+
+>>> TEST 6 PASSED <<<
+
+========================================
+TEST CASE 7
+========================================
+Key:       deadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeef
+Plaintext: 80000000000000000000000000000000
+
+--- Encryption Test ---
+Encrypted: 8283c713391c3ef80ddd0f1e03fcbd3d
+INFO: No expected ciphertext provided (computed mode)
+
+--- Decryption Test ---
+Decrypted: 80000000000000000000000000000000
+✓ PASS: Roundtrip successful (decrypt(encrypt(plaintext)) == plaintext)
+
+>>> TEST 7 PASSED <<<
+
+========================================
+TEST CASE 8
+========================================
+Key:       2b7e151628aed2a6abf7158809cf4f3c762e7160f38b4da56a784d9045190cfe
+Plaintext: 656c6c6f20576f726c64212121212121
+
+--- Encryption Test ---
+Encrypted: d6f6196b01d2ea5aa3d93c9b4f616686
+INFO: No expected ciphertext provided (computed mode)
+
+--- Decryption Test ---
+Decrypted: 656c6c6f20576f726c64212121212121
+✓ PASS: Roundtrip successful (decrypt(encrypt(plaintext)) == plaintext)
+
+>>> TEST 8 PASSED <<<
+
+========================================
+TEST CASE 9
+========================================
+Key:       0f1e2d3c4b5a69788796a5b4c3d2e1f0f0e1d2c3b4a5968778695a4b3c2d1e0f
+Plaintext: 0f0e0d0c0b0a09080706050403020100
+
+--- Encryption Test ---
+Encrypted: c69d3888bd20edaea916bd02aff46d1c
+INFO: No expected ciphertext provided (computed mode)
+
+--- Decryption Test ---
+Decrypted: 0f0e0d0c0b0a09080706050403020100
+✓ PASS: Roundtrip successful (decrypt(encrypt(plaintext)) == plaintext)
+
+>>> TEST 9 PASSED <<<
+
+
+==============================================================================
+  TEST SUMMARY
+==============================================================================
+Total Tests:  10
+Passed:       10
+Failed:       0
+Pass Rate:    100.0%
+==============================================================================
+
+*** ALL TESTS PASSED! AES-256 CORE IS WORKING CORRECTLY ***
+
+rtl/tb_aes256_core_comprehensive.v:325: $finish called at 5505000 (1ps)
